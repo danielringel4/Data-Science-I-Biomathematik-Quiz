@@ -109,4 +109,15 @@ body {
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+}
+
+.correct {
+    background-color: #27ae60 !important;
+    color: white !important;
+}
+
+.wrong {
+    background-color: #e74c3c !important;
+    color: white !important;
 }
