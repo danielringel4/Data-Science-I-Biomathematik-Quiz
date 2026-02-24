@@ -43,12 +43,13 @@ function showQuestion() {
         const button = document.createElement("button");
         button.textContent = answer;
         button.classList.add("answer-btn");
+        // button.onclick = () => checkAnswer(index);
         button.onclick = (e) => checkAnswer(index, e.target);
         answersDiv.appendChild(button);
     });
-    // if (window.MathJax) {
-    //     MathJax.typesetPromise();
-    // }
+    if (window.MathJax) {
+        MathJax.typesetPromise();
+    }
 }
 
 function checkAnswer(selectedIndex, clickedButton) {
@@ -94,6 +95,5 @@ function endQuiz() {
     returnDiv.appendChild(button);
     returnDiv.style.display = "block";
 }
-
 
 showTopics();
