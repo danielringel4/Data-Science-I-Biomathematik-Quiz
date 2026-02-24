@@ -43,7 +43,7 @@ function showQuestion() {
         const button = document.createElement("button");
         button.textContent = answer;
         button.classList.add("answer-btn");
-        button.onclick = () => checkAnswer(index);
+        button.onclick = (e) => checkAnswer(index, e.target);
         answersDiv.appendChild(button);
     });
     // if (window.MathJax) {
@@ -51,19 +51,29 @@ function showQuestion() {
     // }
 }
 
-function checkAnswer(selectedIndex) {
+function checkAnswer(selectedIndex, clickedButton) {
     const q = QUESTIONS[currentTopic][currentQuestionIndex];
+    
+    const allButtons = answersDiv.querySelectorAll(".answer-btn");
+    
+    allButtons.forEach(btn => btn.style.pointerEvents = "none");
+
     if (selectedIndex === q.correct) {
         score++;
-    }
-
-    currentQuestionIndex++;
-
-    if (currentQuestionIndex < QUESTIONS[currentTopic].length) {
-        showQuestion();
+        clickedButton.classList.add("correct");
     } else {
-        endQuiz();
+        clickedButton.classList.add("wrong");
+        allButtons[q.correct].classList.add("correct");
     }
+
+    setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < QUESTIONS[currentTopic].length) {
+            showQuestion();
+        } else {
+            endQuiz();
+        }
+    }, 1000);
 }
 
 function endQuiz() {
@@ -84,5 +94,6 @@ function endQuiz() {
     returnDiv.appendChild(button);
     returnDiv.style.display = "block";
 }
+
 
 showTopics();
