@@ -15,9 +15,9 @@
 * **Lineare Algebra**
 * **Differenzialgleichungen**
 
-## Installation & Nutzung
+## Nutzung
 Rufen Sie diesen [Link](https://danielringel4.github.io/Data-Science-I-Biomathematik-Quiz/) auf.
 ### Alternativ:
 1. Repository klonen oder als ZIP herunterladen.
-2. `index.html` im Browser deiner Wahl öffnen.
+2. `index.html` im Browser der Wahl öffnen.
 ---
