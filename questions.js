@@ -17,7 +17,8 @@ const QUESTIONS = {
         },
         {
             text: "Bewerten Sie die folgenden Aussagen über den Bild-/Wertebereich einer Funktion f auf Richtigkeit.",
-            answers: ["Der Bildbereich ist die Menge von Werten, auf welcher f definiert ist.", "Der Bildbereich ist die Menge von Werten, welche f nicht darstellen kann.", "Der Bildbereich ist abhängig vom Definitionsbereich."]
+            answers: ["Der Bildbereich ist die Menge von Werten, auf welcher f definiert ist.", "Der Bildbereich ist die Menge von Werten, welche f nicht darstellen kann.", "Der Bildbereich ist abhängig vom Definitionsbereich."],
+            correct: 2
         }
     ],
     "Differenzialrechnung": [
@@ -64,4 +65,5 @@ const QUESTIONS = {
             correct: 0
         }
     ],
+
 }
