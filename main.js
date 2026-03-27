@@ -1,3 +1,4 @@
+let questions = {};
 let currentTopic = null;
 let currentQuestionIndex = 0;
 let score = 0;
@@ -9,9 +10,24 @@ const answersDiv = document.getElementById("answers");
 const returnDiv = document.getElementById("return-btn");
 const progressDiv = document.getElementById("progress");
 
+async function loadQuestions() {
+    try {
+        const response = await fetch('questions.json');
+        if (!response.ok) throw new Error('Netzwerk-Antwort war nicht ok');
+        
+        questions = await response.json();
+        console.log("Daten erfolgreich geladen");
+        showTopics();
+    } catch (error) {
+        console.error('Fehler beim Laden der JSON:', error);
+        topicDiv.innerHTML = "<p>Fehler beim Laden der Fragen. Bitte prüfe die questions.json.</p>";
+    }
+}
+
 function showTopics() {
     topicDiv.innerHTML = "";
-    for (let topic in QUESTIONS) {
+    topicDiv.style.display = "grid";
+    for (let topic in questions) {
         const button = document.createElement("button");
         button.textContent = topic;
         button.classList.add("topic-btn");
@@ -24,18 +40,17 @@ function startQuiz(topic) {
     currentTopic = topic;
     currentQuestionIndex = 0;
     score = 0;
-
     topicDiv.style.display = "none";
     quizArea.style.display = "block";
-
+    returnDiv.style.display = "none";
     showQuestion();
 }
 
 function showQuestion() {
-    const questionsArray = QUESTIONS[currentTopic];
-    const totalQuestions = questionsArray.length;
-    progressDiv.textContent = `Frage ${currentQuestionIndex + 1} von ${totalQuestions}`;
-    const q = QUESTIONS[currentTopic][currentQuestionIndex];
+    const questionsArray = questions[currentTopic];
+    const q = questionsArray[currentQuestionIndex];
+    
+    progressDiv.textContent = `Frage ${currentQuestionIndex + 1} von ${questionsArray.length}`;
     questionText.textContent = q.text;
     answersDiv.innerHTML = "";
 
@@ -43,18 +58,17 @@ function showQuestion() {
         const button = document.createElement("button");
         button.textContent = answer;
         button.classList.add("answer-btn");
-        // button.onclick = () => checkAnswer(index);
         button.onclick = (e) => checkAnswer(index, e.target);
         answersDiv.appendChild(button);
     });
+
     if (window.MathJax) {
         MathJax.typesetPromise();
     }
 }
 
 function checkAnswer(selectedIndex, clickedButton) {
-    const q = QUESTIONS[currentTopic][currentQuestionIndex];
-    
+    const q = questions[currentTopic][currentQuestionIndex];
     const allButtons = answersDiv.querySelectorAll(".answer-btn");
     
     allButtons.forEach(btn => btn.style.pointerEvents = "none");
@@ -69,7 +83,7 @@ function checkAnswer(selectedIndex, clickedButton) {
 
     setTimeout(() => {
         currentQuestionIndex++;
-        if (currentQuestionIndex < QUESTIONS[currentTopic].length) {
+        if (currentQuestionIndex < questions[currentTopic].length) {
             showQuestion();
         } else {
             endQuiz();
@@ -79,21 +93,19 @@ function checkAnswer(selectedIndex, clickedButton) {
 
 function endQuiz() {
     progressDiv.textContent = "";
-    questionText.textContent = `Richtige Antworten: ${score}`;
+    questionText.textContent = `Quiz beendet! Deine Punktzahl: ${score} von ${questions[currentTopic].length}`;
     answersDiv.innerHTML = "";
-    returnDiv.innerHTML ="";
+    
+    returnDiv.innerHTML = "";
     const button = document.createElement("button");
-    button.textContent = "Zurück";
+    button.textContent = "Zurück zur Übersicht";
     button.classList.add("return-btn");
     button.onclick = () => {
         quizArea.style.display = "none";
-        returnDiv.style.display = "none";
-        topicDiv.style.display = "grid";
-        topicDiv.innerHTML = "";
         showTopics();
     };
     returnDiv.appendChild(button);
     returnDiv.style.display = "block";
 }
 
-showTopics();
+loadQuestions();
