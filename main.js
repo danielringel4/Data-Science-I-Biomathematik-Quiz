@@ -20,7 +20,7 @@ async function loadQuestions() {
         showTopics();
     } catch (error) {
         console.error('Fehler beim Laden der JSON:', error);
-        topicDiv.innerHTML = "<p>Fehler beim Laden der Fragen. Bitte prüfe die questions.json.</p>";
+        topicDiv.innerHTML = "<p>Fehler beim Laden der Fragen.</p>";
     }
 }
 
