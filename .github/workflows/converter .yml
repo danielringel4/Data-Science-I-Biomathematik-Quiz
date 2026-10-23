@@ -1,0 +1,37 @@
+name: Excel zu JSON Converter
+
+on:
+  push:
+    paths:
+      - '**.xlsx'
+
+jobs:
+  convert:
+  
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Abhängigkeiten installieren
+        run: |
+          pip install pandas openpyxl
+
+      - name: Converter ausführen
+        run: |
+          python converter.py
+
+      - name: Änderungen (questions.json) automatisch speichern
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Automatische Konvertierung von Excel zu JSON"
+          file_pattern: 'questions.json'
