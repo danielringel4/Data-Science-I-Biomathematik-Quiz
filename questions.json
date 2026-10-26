@@ -1,685 +1,799 @@
 {
-    "Funktionen einer Variablen": [
+    "Deskriptive univariate Statistik": [
         {
-            "text": "Welche Funktion beschreibt ein Sättigungsverhalten, wie es in der Michaelis-Menten-Kinetik vorkommt?",
+            "text": "Wann ist ein Merkmal diskret?",
             "answers": [
-                "\\( f(x) = ax^2 \\)",
-                "\\( f(x) = \\frac{ax}{b+x} \\)",
-                "\\( f(x) = a \\cdot e^{bx} \\)",
-                "Noch einfügen."
+                "Wenn die Grundmenge \\(\\Omega\\) überabzählbar ist.",
+                "Wenn die Grundmenge \\(\\Omega\\) abzählbar ist.",
+                "Wenn die Stichproben nicht direkt die Information darstellen.",
+                "Wenn der Mittelwert der Stichprobe 0 ist."
             ],
             "correct": 1,
             "difficulty": "easy"
         },
         {
-            "text": "Was ist der Grenzwert von \\( f(x) = e^{-x} \\) für \\( x \\to \\infty \\)?",
+            "text": "Wann ist ein Merkmal stetig?",
             "answers": [
-                "\\( 0 \\)",
-                "\\( 1 \\)",
-                "\\( \\infty \\)",
-                "Noch einfügen."
+                "Wenn die Grundmenge \\(\\Omega\\) überabzählbar ist.",
+                "Wenn die Grundmenge \\(\\Omega\\) abzählbar ist.",
+                "Wenn die Stichproben gleichverteilt sind.",
+                "Wenn der Mittelwert der Stichprobe 0 ist."
             ],
             "correct": 0,
             "difficulty": "easy"
         },
         {
-            "text": "Für welche Funktion ist der Definitionsbereich \\( D = \\mathbb{R} \\setminus \\{0\\} \\)?",
+            "text": "Was beschreibt die absolute Häufigkeit eines Merkmals?",
             "answers": [
-                "\\( f(x) = \\ln(x) \\)",
-                "\\( f(x) = \\frac{1}{x} \\)",
-                "\\( f(x) = \\sqrt{x} \\)",
-                "Noch einfügen."
+                "Die (absolute) Anzahl des Auftretens des Merkmals in der Stichprobe.",
+                "Die relative Anzahl des Auftretens des Merkmals in der Stichprobe.",
+                "Die Anzahl wie häufig ein Merkmal insgesamt auftreten kann.",
+                "Die Anzahl an verschiedenen Elementen aus der Stichprobe."
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was beschreibt die relative Häufigkeit eines Merkmals?",
+            "answers": [
+                "Die (absolute) Anzahl des Auftretens des Merkmals in der Stichprobe.",
+                "Die relative Anzahl des Auftretens des Merkmals in der Stichprobe.",
+                "Die Anzahl wie häufig ein Merkmal insgesamt auftreten kann.",
+                "Die Anzahl an verschiedenen Elementen aus der Stichprobe."
+            ],
+            "correct": 1,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Wie hängen die absolute und relative Häufigkeit eines Merkmals zusammen?",
+            "answers": [
+                "Die absolute Häufigkeit ist immer das Quadrat der relativen Häufigkeit.",
+                "Die relative Häufigkeit erhält man durch Multiplikation der absoluten Häufigkeit mit der Stichprobengröße.",
+                "Die relative Häufigkeit entspricht der durch die Stichprobengröße dividierte absoluten Häufigkeit.",
+                "Beide beschreiben dieselbe Größe."
             ],
             "correct": 2,
             "difficulty": "easy"
         },
         {
-            "text": "Welche Funktion beschreibt begrenztes Wachstum in einem Habitat?",
+            "text": "Was ist ein Histogramm und woran kann man die rel./abs. Haeufigkeit darin ablesen?",
             "answers": [
-                "Exponentialfunktion",
-                "Logistische Funktion",
-                "Sinusfunktion",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Welche Aussage beschreibt den Bildbereich \\( W(f) \\) einer Funktion korrekt?",
-            "answers": [
-                "Die Menge aller Werte, die die Funktion tatsächlich annimmt",
-                "Die Menge aller Werte, die man in die Funktion einsetzen darf",
-                "Der Zielbereich, in den die Funktion abbildet (z.B. \\( \\mathbb{R} \\))",
-                "Die Umkehrfunktion der Zuordnung"
+                "Eine Darstellung der Haeufigkeitsverteilung; rel. Haeufigkeit an der Flaeche, abs. Haeufigkeit an der Hoehe mal Klassenbreite",
+                "Eine Tabelle mit allen Messwerten",
+                "Ein Kreisdiagramm zur Darstellung von Anteilen",
+                "Ein Streudiagramm zur Korrelationsanalyse"
             ],
             "correct": 0,
             "difficulty": "easy"
         },
         {
-            "text": "Was bedeutet es anschaulich, wenn eine Funktion in einem Intervall stetig ist?",
+            "text": "Was stellt ein Histogramm dar?",
             "answers": [
-                "Der Graph muss eine Gerade sein",
-                "Der Graph kann ohne Absetzen gezeichnet werden",
-                "Die Funktion hat an jeder Stelle einen positiven Wert",
-                "Die Funktion ist nur für ganze Zahlen definiert"
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was besagt das \\( \\varepsilon \\)-\\( \\delta \\)-Kriterium der Stetigkeit formal?",
-            "answers": [
-                "Dass kleine Änderungen im Argument \\( x \\) zu beliebig großen Sprüngen in \\( f(x) \\) führen",
-                "Dass für jeden noch so kleinen Abstand \\( \\varepsilon \\) im Bildbereich ein Bereich \\( \\delta \\) im Definitionsbereich existiert, in dem die Funktionswerte nahe genug beieinander bleiben",
-                "Dass die Funktion an der Stelle \\( x_0 \\) gegen unendlich läuft",
-                "Dass \\( \\delta \\) immer größer als \\( \\varepsilon \\) sein muss"
-            ],
-            "correct": 1,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Eine Funktion ordnet jedem Element der Definitionsmenge...",
-            "answers": [
-                "genau ein Element der Zielmenge zu",
-                "beliebig viele Elemente der Zielmenge zu",
-                "mindestens zwei Elemente der Zielmenge zu",
-                "nur positive Zahlen zu"
-            ],
-            "correct": 0,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Unter welcher zentralen Annahme wird die Michaelis-Menten-Kinetik für die Substratkonzentration \\( S \\) meist hergeleitet?",
-            "answers": [
-                "Das Substrat liegt im Mangel vor",
-                "Es gibt kein Enzym",
-                "Die Enzymkonzentration ist variabel",
-                "Das Substrat liegt im Überschuss vor (Sättigungsbereich)"
-            ],
-            "correct": 3,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Wann bezeichnet man eine Unstetigkeitsstelle an einem Punkt \\( x_0 \\) als 'hebbar'?",
-            "answers": [
-                "Wenn die Funktion dort gegen Unendlich läuft",
-                "Wenn der Grenzwert an dieser Stelle existiert und man die Funktion dort durch Definition eines Wertes 'reparieren' kann",
-                "Wenn die Funktion dort eine Sprungstelle hat",
-                "Wenn die Funktion dort nicht existiert"
-            ],
-            "correct": 1,
-            "difficulty": "hard"
-        }
-    ],
-    "Differenzialrechnung": [
-        {
-            "text": "Was gibt die erste Ableitung \\( f'(t) \\) einer Populationsgröße an?",
-            "answers": [
-                "Die Gesamtanzahl",
-                "Die momentane Änderungsrate",
-                "Die Kapazitätsgrenze",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Wie lautet die Ableitung von \\( f(x) = \\ln(x) \\)?",
-            "answers": [
-                "\\( e^x \\)",
-                "\\( 1 \\)",
-                "\\( \\frac{1}{x} \\)",
-                "Noch einfügen."
-            ],
-            "correct": 2,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Welche Regel nutzt man für die Ableitung von \\( f(x) = g(x) \\cdot h(x) \\)?",
-            "answers": [
-                "Kettenregel",
-                "Quotientenregel",
-                "Produktregel",
-                "Noch einfügen."
-            ],
-            "correct": 2,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was ist die Ableitung von \\( f(t) = e^{rt} \\) nach \\( t \\)?",
-            "answers": [
-                "\\( r \\cdot e^{rt} \\)",
-                "\\( e^{rt} \\)",
-                "\\( t \\cdot e^r \\)",
-                "Noch einfügen."
-            ],
-            "correct": 0,
-            "difficulty": "easy"
-        },
-        {
-            "text": "An einem lokalen Maximum einer Funktion ist die erste Ableitung...",
-            "answers": [
-                "Positiv",
-                "Negativ",
-                "Null",
-                "Noch einfügen."
-            ],
-            "correct": 2,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was beschreibt die Ableitung \\( s'(t) \\) im Kontext einer Bewegung biologischer Organismen?",
-            "answers": [
-                "Die zum Zeitpunkt \\( t \\) zurückgelegte Gesamtstrecke",
-                "Die momentane Geschwindigkeit zum Zeitpunkt \\( t \\)",
-                "Die Beschleunigung über den gesamten Zeitraum",
-                "Den Startpunkt der Bewegung"
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Warum ist der Differenzenquotient allein oft nicht ausreichend für Modelle?",
-            "answers": [
-                "Weil er nur die Durchschnittsgeschwindigkeit über ein Intervall angibt, nicht die exakte Rate in einem Moment",
-                "Weil er mathematisch nicht definiert ist",
-                "Weil er nur für lineare Funktionen funktioniert",
-                "Weil er keine Einheiten berücksichtigen kann"
-            ],
-            "correct": 0,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Wofür wird die Taylorentwicklung in der biologischen Modellierung genutzt?",
-            "answers": [
-                "Um komplizierte Funktionen lokal durch einfachere Polynome anzunähern",
-                "Um Integrale exakt zu berechnen",
-                "Um Datenpunkte miteinander zu verbinden",
-                "Um den Definitionsbereich zu erweitern"
-            ],
-            "correct": 0,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Welcher Zusammenhang besteht zwischen Stetigkeit und Differenzierbarkeit einer Funktion?",
-            "answers": [
-                "Nur lineare Funktionen sind stetig",
-                "Stetigkeit impliziert immer Differenzierbarkeit",
-                "Es gibt keinen Zusammenhang",
-                "Differenzierbarkeit impliziert Stetigkeit, aber Stetigkeit impliziert nicht zwingend Differenzierbarkeit"
-            ],
-            "correct": 3,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Wozu dient die Linearisierung einer Funktion in der Praxis (z.B. Fehlerrechnung)?",
-            "answers": [
-                "Um den exakten Wert im Unendlichen zu finden",
-                "Um die Auswirkung kleiner Fehler im Argument auf den Funktionswert abzuschätzen",
-                "Um die Funktion global zu ersetzen",
-                "Um das Integral zu umgehen"
-            ],
-            "correct": 1,
-            "difficulty": "hard"
-        }
-    ],
-    "Integration": [
-        {
-            "text": "Was berechnet das bestimmte Integral einer Rate über die Zeit?",
-            "answers": [
-                "Die Änderung der Rate",
-                "Die akkumulierte Gesamtmenge",
-                "Den Durchschnittswert",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Wie lautet die Stammfunktion von \\( f(x) = x \\)?",
-            "answers": [
-                "\\( 1 \\)",
-                "\\( \\frac{1}{2}x^2 + C \\)",
-                "\\( x^2 + C \\)",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Das Integral von \\( \\frac{1}{x} \\) ist...",
-            "answers": [
-                "\\( \\ln|x| + C \\)",
-                "\\( -x^{-2} \\)",
-                "\\( e^x \\)",
-                "Noch einfügen."
-            ],
-            "correct": 0,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Wie nennt man das Verfahren zur Integration von Produkten?",
-            "answers": [
-                "Substitution",
-                "Ableitung",
-                "Partielle Integration",
-                "Noch einfügen."
-            ],
-            "correct": 2,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was ist das Integral von \\( \\sin(x) \\)?",
-            "answers": [
-                "\\( -\\cos(x) + C \\)",
-                "\\( \\cos(x) \\)",
-                "\\( \\tan(x) \\)",
-                "Noch einfügen."
-            ],
-            "correct": 0,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Wie lässt sich das bestimmte Integral anschaulich interpretieren?",
-            "answers": [
-                "Als lokale Steigung der Funktion",
-                "Als Flächeninhalt zwischen dem Funktionsgraphen und der x-Achse",
-                "Als Kehrwert der Funktion",
-                "Als maximaler Wert der Funktion"
-            ],
-            "correct": 1,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Was berechnet man in der Biologie, wenn man eine Rate (z.B. Geburtenrate) über die Zeit integriert?",
-            "answers": [
-                "Die Änderung der Rate selbst",
-                "Die durchschnittliche Geschwindigkeit der Änderung",
-                "Die akkumulierte Gesamtmenge (z.B. Gesamtanzahl der Neugeborenen)",
-                "Den Zeitpunkt des maximalen Wachstums"
-            ],
-            "correct": 2,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Ist jede stetige Funktion über einem abgeschlossenen Intervall integrierbar?",
-            "answers": [
-                "Nein, nur Polynome sind integrierbar",
-                "Ja, Stetigkeit ist eine hinreichende Bedingung für die Integrierbarkeit",
-                "Nur wenn sie keine Nullstellen hat",
-                "Nur wenn sie linear ist"
-            ],
-            "correct": 1,
-            "difficulty": "hard"
-        }
-    ],
-    "Funktionen mehrerer Variablen": [
-        {
-            "text": "Was beschreibt der Gradient einer Funktion \\( f(x,y) \\)?",
-            "answers": [
-                "Den steilsten Anstieg",
-                "Das Volumen",
-                "Den Durchschnitt",
-                "Noch einfügen."
-            ],
-            "correct": 0,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Wie nennt man die Ableitung nach nur einer Variable (z.B. nach \\( x \\))?",
-            "answers": [
-                "Totale Ableitung",
-                "Schnittableitung",
-                "Partielle Ableitung",
-                "Noch einfügen."
-            ],
-            "correct": 2,
-            "difficulty": "easy"
-        },
-        {
-            "text": "In einem 3D-Koordinatensystem beschreibt \\( z = f(x,y) \\) eine...",
-            "answers": [
-                "Linie",
-                "Fläche",
-                "Punktwolke",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Welches Symbol wird für partielle Ableitungen verwendet?",
-            "answers": [
-                "\\( d \\)",
-                "\\( \\partial \\)",
-                "\\( \\Delta \\)",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Ein Sattelpunkt ist ein kritischer Punkt, der...",
-            "answers": [
-                "Immer ein Maximum ist",
-                "Immer ein Minimum ist",
-                "Weder Maximum noch Minimum ist",
-                "Noch einfügen."
-            ],
-            "correct": 2,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was beschreibt eine partielle Ableitung \\( \\frac{\\partial f}{\\partial x} \\)?",
-            "answers": [
-                "Die Änderung der Funktion, wenn sich alle Variablen gleichzeitig ändern",
-                "Die Änderung der Funktion, wenn sich nur die Variable x ändert und alle anderen konstant bleiben",
-                "Das Volumen unter der Fläche",
-                "Den Schnittpunkt mit der z-Achse"
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was beschreibt ein Volumenintegral in der Biologie (z.B. über eine Wirkstoffkonzentration in einem Gewebe)?",
-            "answers": [
-                "Die Gesamtmenge des Wirkstoffs im betrachteten Raum",
-                "Die maximale Konzentration an einem Punkt",
-                "Die Geschwindigkeit der Diffusion",
-                "Den Rand des Gewebes"
-            ],
-            "correct": 0,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Wie lässt sich eine Funktion \\( f(x,y) \\) lokal um einen Punkt am besten durch eine lineare Funktion annähern?",
-            "answers": [
-                "Durch eine Tangente (Linie)",
-                "Durch einen einzelnen Punkt",
-                "Durch einen Kreis",
-                "Durch eine Tangentialebene im 3D-Raum"
-            ],
-            "correct": 3,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Was gibt die Richtungsableitung einer Funktion an?",
-            "answers": [
-                "Die Änderung der Funktion nur entlang der x-Achse",
-                "Die lokale Änderungsrate in eine beliebig vorgegebene Richtung im Raum",
-                "Das Volumen unter der Kurve",
-                "Die Krümmung der Niveaulinien"
-            ],
-            "correct": 1,
-            "difficulty": "hard"
-        }
-    ],
-    "Lineare Algebra": [
-        {
-            "text": "Wann ist eine Matrix multiplizierbar?",
-            "answers": [
-                "Immer",
-                "Spaltenanzahl A = Zeilenanzahl B",
-                "Wenn sie quadratisch sind",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was ist ein Eigenvektor?",
-            "answers": [
-                "Ein Vektor, der nur skaliert wird",
-                "Ein Vektor der Länge Null",
-                "Ein inverser Vektor",
-                "Noch einfügen."
-            ],
-            "correct": 0,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Wie kann ein Eigenvektor \\(\\lambda\\) formuliert werden?",
-            "answers": [
-                "\\(\\vec{x} = \\lambda A\\)",
-                "\\(A \\lambda = A^{-1} \\lambda\\)",
-                "\\(A \\vec{x} = \\lambda \\vec{x}\\)",
-                "Noch einfügen."
-            ],
-            "correct": 0,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Die Determinante einer Matrix gibt Aufschluss über...",
-            "answers": [
-                "Die Summe der Elemente",
-                "Die Anzahl der Zeilen",
-                "Die Invertierbarkeit",
-                "Noch einfügen."
-            ],
-            "correct": 2,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was ist die Einheitsmatrix?",
-            "answers": [
-                "Überall Nullen",
-                "Einsen auf der Hauptdiagonale",
-                "Überall Einsen",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was passiert geometrisch bei der Multiplikation eines Vektors mit einem Skalar \\( \\alpha > 1 \\)?",
-            "answers": [
-                "Der Vektor wird gedreht",
-                "Der Vektor wird gelöscht",
-                "Die Richtung wird invertiert",
-                "Der Vektor wird gestreckt"
+                "Die absoluten Häufigkeiten aller Merkmale.",
+                "Den zeitlichen Verlauf von zwei kontinuierlichen Variablen.",
+                "Ein Kreisdiagramm zur Veranschaulichung prozentualer Anteile.",
+                "Die Häufigkeitsverteilung von Merkmalen, die in Bins gruppiert wurden."
             ],
             "correct": 3,
             "difficulty": "easy"
         },
         {
-            "text": "Was sagt eine Determinante von Null über ein lineares Gleichungssystem aus?",
+            "text": "Was beschreibt die empirische Verteilungsfunktion?",
             "answers": [
-                "Es gibt genau eine Lösung",
-                "Das System ist nicht eindeutig lösbar (die Matrix ist nicht invertierbar)",
-                "Das System ist immer stabil",
-                "Alle Werte im System sind Null"
+                "Die Summe aller Messwerte",
+                "Die Standardabweichung der Daten",
+                "Den Anteil der Beobachtungen, die kleiner oder gleich einem bestimmten Wert sind",
+                "Die durchschnittliche Haeufigkeit aller Werte"
             ],
-            "correct": 1,
+            "correct": 2,
             "difficulty": "easy"
         },
         {
-            "text": "Was charakterisiert einen Eigenvektor einer Matrix?",
+            "text": "Welchen Vorteil hat der (empirische) Median gegenüber dem (empirischen) Mittelwert?",
             "answers": [
-                "Er wird durch die Matrix-Multiplikation nur gestreckt oder gestaucht, behält aber seine Richtung bei",
-                "Er steht immer senkrecht auf allen anderen Vektoren",
-                "Er ist der Vektor mit der Summe 1",
-                "Er ist das Ergebnis jeder Matrix-Rechnung"
+                "Nicht jede Verteilung besitzt einen Mittelwert, jede aber einen Median.",
+                "Der Median ist besser für eine große Stichprobenmenge.",
+                "Der Median ist robuster gegenüber Ausreißern.",
+                "Bei kategorialen Daten kann der Mittelwert nicht berechnet werden; der Median hingegen schon."
+            ],
+            "correct": 2,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Wie lässt sich der Median graphisch bestimmen?",
+            "answers": [
+                "Der Wert, bei welchem die empirische Verteilungsfunktion \\(\\tilde{F}_n(c) = 0.5\\) ist.",
+                "Durch den höchsten Bin in einem Histogramm.",
+                "Durch den Bin in einem Histogramm mit der größten Fläche.",
+                "Als Schnittpunkt der Regressionsgeraden mit der y-Achse."
             ],
             "correct": 0,
             "difficulty": "easy"
         },
         {
-            "text": "Wofür nutzt man Basistransformationen (Diagonalisierung) bei Matrizen?",
+            "text": "Was sind Modalwerte?",
             "answers": [
-                "Um Matrizen größer zu machen",
-                "Um komplexe gekoppelte Systeme in einfachere, unabhängige Gleichungen zu überführen",
-                "Um die Determinante zu ignorieren",
-                "Um Daten zu löschen"
+                "Kenngrößen der Verteilung.",
+                "Lageparameter der Verteilung.",
+                "Die Werte, die in der Stichprobe am Seltensten vorkommen",
+                "Die Werte, die in der Stichprobe am Häufigsten vorkommen."
             ],
-            "correct": 1,
+            "correct": 3,
             "difficulty": "easy"
         },
         {
-            "text": "Was passiert mit der Determinante einer Matrix \\( A \\), wenn zwei Zeilen oder Spalten linear abhängig sind?",
+            "text": "Wie viele Modalwerte kann eine Stichprobe haben?",
             "answers": [
-                "Sie wird verdoppelt",
-                "Sie ist gleich Null",
-                "Sie wird negativ",
-                "Sie bleibt unverändert"
+                "Immer genau einen.",
+                "Höchstens zwei.",
+                "Beliebig viele.",
+                "Keinen, da der Modalwert nur für Grundgesamtheiten existiert."
             ],
-            "correct": 1,
-            "difficulty": "hard"
+            "correct": 2,
+            "difficulty": "easy"
         },
         {
-            "text": "Welche Bedingung muss erfüllt sein, damit eine Matrix \\( A \\in \\mathbb{R}^{n \\times n} \\) diagonalisierbar ist?",
+            "text": "Kann der Modalwert gleich auf diskrete und stetige Merkmale angewandt werden?",
             "answers": [
-                "Sie muss \\( n \\) linear unabhängige Eigenvektoren besitzen",
-                "Sie muss nur positive Zahlen enthalten",
-                "Sie muss eine Einheitsmatrix sein",
-                "Ihre Determinante muss Eins sein"
-            ],
-            "correct": 0,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Wie lautet die Determinantenregel für das Produkt zweier Matrizen \\( A \\) und \\( B \\)?",
-            "answers": [
-                "\\( \\det(A \\cdot B) = \\det(A) + \\det(B) \\)",
-                "\\( \\det(A \\cdot B) = \\det(A) \\cdot \\det(B) \\)",
-                "\\( \\det(A \\cdot B) = \\det(A) / \\det(B) \\)",
-                "Das Produkt ist nicht definiert"
-            ],
-            "correct": 1,
-            "difficulty": "hard"
-        },
-        {
-            "text": "Gilt im Allgemeinen \\(AB = BA\\)?",
-            "answers": [
-                "Ja, da Matrixmultiplikation per Definition kommutativ ist.",
-                "Nein, da \\(\\det(AB) \\neq \\det(BA)\\)",
-                "Nein, da eine Vertauschung der Reihenfolge der Multiplikation das Ergebnis ändert",
-                "Noch einfügen."
+                "Ja, für beide Merkmalstypen wird einfach der am häufigsten vorkommende Wert gewählt.",
+                "Ja, stetige Daten müssen vorab nie klassiert werden.",
+                "Nein, da Werte einer stetigen Verteilung selten mehrmals vorkommen, wird für stetige Merkmale der Modus anders berechnet.",
+                "Nein, für diskrete Merkmale existiert überhaupt kein Modalwert."
             ],
             "correct": 2,
             "difficulty": "hard"
         },
         {
-            "text": "Ist das Produkt einer Matrix \\(A \\in \\mathbb{R}^{3 \\times 2}\\) und einer Matrix \\(B \\in \\mathbb{R}^{2 \\times 3}\\) definiert? Falls ja, welche Dimension hat dieses?",
+            "text": "Was ist der Unterschied zwischen empirischer Varianz und Stichprobenvarianz?",
             "answers": [
-                "Ja, mit \\(AB \\in \\mathbb{R}^{3 \\times 3}\\).",
-                "Ja, mit \\(AB \\in \\mathbb{R}^{2 \\times 2}\\)",
-                "Nein, das Produkt ist nicht definiert.",
-                "Noch einfügen."
+                "Stichprobenvarianz wird nur bei kleinen Stichproben verwendet",
+                "Es gibt keinen Unterschied",
+                "Stichprobenvarianz teilt durch n-1, empirische Varianz durch n",
+                "Empirische Varianz ist immer groesser"
+            ],
+            "correct": 2,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was ist ein Boxplot?",
+            "answers": [
+                "Ein Histogramm mit farbigen Balken",
+                "Eine Tabelle mit statistischen Kennzahlen",
+                "Ein dreidimensionales Diagramm",
+                "Eine grafische Darstellung von Median, Quartilen und Ausreissern"
+            ],
+            "correct": 3,
+            "difficulty": "easy"
+        }
+    ],
+    "Deskriptive multivariate Statistik": [
+        {
+            "text": "Mit welchen Kenngrößen kann der Zusammenhang zweier (oder mehr) Merkmale untersucht werden?",
+            "answers": [
+                "Mittelwert und Standardabweichung.",
+                "Covarianz und Korrelation.",
+                "Median und Interquartilsabstand.",
+                "Modus und Spannweite."
+            ],
+            "correct": 1,
+            "difficulty": "easy"
+        }
+    ],
+    "Linear Regression und Hauptkomponentenanalyse": [
+        {
+            "text": "Residuen \\(\\varepsilon\\) bezeichnen die Abstände zwischen den Datenpunkten und der Regressionsgeraden. Wie sollten die Residuen aussehen, damit man eine lineares Modell annehmen kann?",
+            "answers": [
+                "Die Residuen sind egal, nur der Korrelationskoeffizient \\(r_{xy}\\) muss nahe 1 sein.",
+                "Die Residuen sollten \\(\\varepsilon \\sim \\mathcal{U}_{[0, 1]}\\) erfüllen.",
+                "Wenn \\(\\varepsilon \\sim \\mathcal{N}(0, \\sigma^2)\\), dann kann das Modell die Zusammenhänge in den Daten wiedergeben.",
+                "Es reicht zu überprüfen, ob die Daten normalverteilt sind."
+            ],
+            "correct": 2,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Wie funktioniert die Methode der kleinsten Quadrate?",
+            "answers": [
+                "Minimierung der Summe der quadrierten Abweichungen zwischen beobachteten und vorhergesagten Werten",
+                "Berechnung des kleinsten Wertes",
+                "Mittelung aller quadrierten Differenzen",
+                "Addition aller Quadrate der Messwerte"
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Wie kann man die Qualitaet einer linearen Regression beurteilen?",
+            "answers": [
+                "Durch das Bestimmtheitsmass R\\(^2\\), das den erklaerten Varianzanteil angibt",
+                "Nur durch visuelle Inspektion",
+                "Durch die Steigung der Geraden",
+                "Durch Zaehlen der Datenpunkte"
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Besteht ein Zusammenhang zwischen Bestimmtheitsmass R\\(^2\\) und Korrelationskoeffizient r?",
+            "answers": [
+                "Nein, sie sind voellig unabhaengig",
+                "R\\(^2\\) ist immer groesser als r",
+                "Sie sind identisch",
+                "Ja, R\\(^2\\) ist das Quadrat des Korrelationskoeffizienten nach Pearson"
+            ],
+            "correct": 3,
+            "difficulty": "hard"
+        }
+    ],
+    "Induktive Statistik": [
+        {
+            "text": "Was besagen die Axiome von Kolmogorov?",
+            "answers": [
+                "Bedingungen fuer Normalverteilungen",
+                "Definitionen von Zufallsvariablen",
+                "Grundlegende Eigenschaften von Wahrscheinlichkeiten: Nicht-Negativität, Normierung, Additivität",
+                "Regeln zur Berechnung von Mittelwerten"
+            ],
+            "correct": 2,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist eine \\(\\sigma\\)-Algebra?",
+            "answers": [
+                "Eine spezielle lineare Gleichung zur Berechnung von Standardabweichungen.",
+                "Ein Mengensystem, das den Ereignisraum \\(\\Omega\\) enthält, sowie abgeschlossen bzgl. Komplementbildung und Vereinigung ist.",
+                "Eine Menge aller reellen Zahlen, die größer als null sind.",
+                "Ein Vektorraum, der nur aus orthogonalen Matrizen besteht."
+            ],
+            "correct": 1,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist die jeweils kleinste und größte \\(\\sigma\\)-Algebra \\(\\Sigma\\) mit einem Ereignisraum \\(\\Omega\\)?",
+            "answers": [
+                "Die kleinste \\(\\sigma\\)-Algebra ist \\(\\Sigma = \\{\\emptyset, \\Omega\\}\\), die größte ist \\(\\Sigma = \\mathcal{P}(\\Omega)\\).",
+                "Die kleinste ist \\(\\Sigma = \\emptyset\\), die größte ist \\(\\Sigma = \\Omega\\).",
+                "Die kleinste ist \\(\\Sigma = \\{\\Omega\\}\\), die größte ist \\(\\Sigma = \\mathbb{R}\\).",
+                "Die kleinste ist \\(\\Sigma = \\mathcal{P}(\\Omega)\\), die größte ist \\(\\Sigma = \\{\\emptyset, \\Omega\\}\\)."
+            ],
+            "correct": 0,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was ist ein Wahrscheinlichkeitsmaß?",
+            "answers": [
+                "Eine Funktion, die Ereignissen aus einer \\(\\sigma\\)-Algebra eine Zahl zwischen 0 und 1 zuordnet.",
+                "Ein anderer Begriff für die Messung der Standardabweichung.",
+                "Der reziproke Wert der Varianz einer Stichprobe.",
+                "Ein Bereich zwischen -1 und +1 zur Bestimmung von Korrelationen."
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was bezeichnet ein Wahrscheinlichkeitsraum?",
+            "answers": [
+                "Das Tripel (\\(\\Omega, \\Sigma, \\mathbb{P}\\)) aus einem Ereignisraum \\(\\Omega\\), einer \\(\\sigma\\)-Algebra \\(\\Sigma\\) und einem Wahrscheinlichkeitsmaß \\(\\mathbb{P}\\).",
+                "Das Intervall \\([0, 1]\\) auf der reellen Zahlengeraden.",
+                "Ein dreidimensionales Koordinatensystem zur Darstellung von Dichtefunktionen.",
+                "Die Menge aller möglichen Ausgänge eines Zufallsexperiments ohne Nebenbedingungen."
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Sei (\\(\\Omega, \\Sigma, \\mathbb{P}\\)) ein \\(W\\)-Raum. Wann sind zwei Ereignisse \\(A, B \\in \\Sigma\\) stochastisch unabhängig?",
+            "answers": [
+                "Wenn sich die Wahrscheinlichkeit für das Ereignis \\(\\mathbb{P}(B)\\) nicht ändert, unabhängig davon, ob \\(A\\) eingetreten ist, oder nicht.",
+                "Wenn gilt: \\(\\mathbb{P}(A \\cap B) = \\mathbb{P}(A) + \\mathbb{P}(B)\\).",
+                "Wenn die Schnittmenge der beiden Ereignisse leer ist (\\(A \\cap B = \\emptyset\\)).",
+                "Wenn das Eintreten von \\(A\\) das Eintreten von \\(B\\) zwingend ausschließt."
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist eine Dichte?",
+            "answers": [
+                "Das Verhaeltnis von Masse zu Volumen",
+                "Die Summe aller Wahrscheinlichkeiten",
+                "Die Anzahl der Messwerte pro Einheit",
+                "Die Ableitung der Verteilungsfunktion bei stetigen Zufallsvariablen"
+            ],
+            "correct": 3,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Wie haengt die Verteilungsfunktion mit der Dichte zusammen?",
+            "answers": [
+                "Die Verteilungsfunktion ist das Integral der Dichte",
+                "Die Dichte ist das Integral der Verteilungsfunktion",
+                "Sie sind identisch",
+                "Beide sind unabhaengig voneinander"
+            ],
+            "correct": 0,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was ist eine bedingte Wahrscheinlichkeit?",
+            "answers": [
+                "Eine Wahrscheinlichkeit, die von vielen Bedingungen abhaengt",
+                "Eine Wahrscheinlichkeit nahe Null",
+                "Die Wahrscheinlichkeit von A unter der Bedingung, dass B eingetreten ist: P(A|B)",
+                "Die Summe zweier Wahrscheinlichkeiten"
+            ],
+            "correct": 2,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Wann sind zwei Ereignisse A und B stochastisch unabhaengig?",
+            "answers": [
+                "Wenn P(A) + P(B) = 1 ergibt",
+                "Wenn sie niemals gleichzeitig auftreten",
+                "Wenn P(A \\(\\cap\\) B) = P(A) \\(\\cdot\\) P(B)",
+                "Wenn P(A) = P(B)"
+            ],
+            "correct": 2,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was besagt der Satz der totalen Wahrscheinlichkeit?",
+            "answers": [
+                "P(A) kann als Summe der bedingten Wahrscheinlichkeiten ueber eine vollstaendige Zerlegung berechnet werden",
+                "Die Summe aller Wahrscheinlichkeiten ist immer 1",
+                "Alle Ereignisse haben die gleiche Wahrscheinlichkeit",
+                "Wahrscheinlichkeiten koennen addiert werden"
+            ],
+            "correct": 0,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was besagt der Satz von Bayes?",
+            "answers": [
+                "Bedingte Wahrscheinlichkeiten sind immer gleich",
+                "Erlaubt die Umkehrung bedingter Wahrscheinlichkeiten: P(A|B) aus P(B|A)",
+                "Nur fuer unabhaengige Ereignisse anwendbar",
+                "Die Wahrscheinlichkeit ist immer symmetrisch"
+            ],
+            "correct": 1,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was ist eine Zufallsvariable?",
+            "answers": [
+                "Eine Funktion, die jedem Ergebnis eines Zufallsexperiments eine Zahl zuordnet",
+                "Eine beliebige mathematische Variable",
+                "Ein Messwert mit grosser Unsicherheit",
+                "Eine Variable, die zufaellig ausgewaehlt wird"
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Wie haengen Zaehldichte, Wahrscheinlichkeitsfunktion und Verteilungsfunktion zusammen?",
+            "answers": [
+                "Die Wahrscheinlichkeitsfunktion gibt P(X=k), die Verteilungsfunktion gibt P(X<=k)",
+                "Alle drei sind identisch",
+                "Sie haengen nicht zusammen",
+                "Die Zaehldichte ist die Ableitung der Verteilungsfunktion"
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist eine Bernoulli-Variable?",
+            "answers": [
+                "Eine stetige Zufallsvariable",
+                "Eine Variable mit unendlich vielen Werten",
+                "Eine diskrete Zufallsvariable mit nur zwei moeglichen Werten (0 und 1)",
+                "Eine Variable mit Normalverteilung"
+            ],
+            "correct": 2,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist der Erwartungswert einer Zufallsvariablen?",
+            "answers": [
+                "Der haeufigste Wert",
+                "Der Median der Verteilung",
+                "Der gewichtete Durchschnitt aller moeglichen Werte mit ihren Wahrscheinlichkeiten",
+                "Die Summe aller Werte"
+            ],
+            "correct": 2,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Wie berechnet sich die Varianz einer Zufallsvariablen X?",
+            "answers": [
+                "Als Summe aller Abweichungen",
+                "Als Quadrat des Erwartungswerts",
+                "Als Differenz zwischen Maximum und Minimum",
+                "Var(X) = E[(X - E[X])\\(^2\\)] = E[X\\(^2\\)] - (E[X])\\(^2\\)"
+            ],
+            "correct": 3,
+            "difficulty": "hard"
+        }
+    ],
+    "Schätztheorie": [
+        {
+            "text": "Was besagt das schwache Gesetz der großen Zahlen?",
+            "answers": [
+                "Die Varianz der Stichprobe wächst proportional zur Anzahl der Beobachtungen.",
+                "Mit zunehmender Stichprobengröße geht die Standardabweichung gegen unendlich.",
+                "Die Mittelwerte der Stichproben konvergieren stochastisch gegen den Erwartungswert der zugrundeliegenden Verteilung.",
+                "Kleine Stichproben besitzen immer dieselbe Verteilung wie die Grundgesamtheit."
+            ],
+            "correct": 2,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Für welche Fälle gilt das schwache Gesetz der großen Zahlen?",
+            "answers": [
+                "Nur für binomialverteilte Zufallsvariablen mit \\(p = 0.5\\).",
+                "Für Folgen von unabhängigen und identisch verteilten Zufallsvariablen mit existierendem Erwartungswert.",
+                "Ausschließlich für Stichproben mit einem Umfang von \\(n < 30\\).",
+                "Nur wenn die Varianz der Zufallsvariablen unendlich groß ist."
+            ],
+            "correct": 1,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was bezeichnet einen erwartungstreuen Schätzer?",
+            "answers": [
+                "Einen Schätzer, dessen Erwartungswert gleich dem zu schätzenden wahren Parameter ist.",
+                "Einen Schätzer, der bei jedem Durchlauf exakt denselben Wert liefert.",
+                "Einen Schätzer mit einer Varianz von genau null.",
+                "Einen Schätzer, der immer dem Median der Stichprobe entspricht."
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist ein konsistenter Schätzer?",
+            "answers": [
+                "Ein Schätzer, dessen Wert unabhängig von der Stichprobengröße unverändert bleibt.",
+                "Ein Schätzer, der nur für normalverteilte Daten definiert ist.",
+                "Ein Schätzer, der mit wachsender Stichprobengröße gegen den wahren Parameter konvergiert.",
+                "Ein Schätzer, bei dem der Standardfehler mit größerem \\(n\\) zunimmt."
+            ],
+            "correct": 2,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was besagt das Gesetz der grossen Zahlen?",
+            "answers": [
+                "Alle Werte naehern sich dem Median",
+                "Grosse Stichproben sind immer besser",
+                "Die Varianz nimmt mit der Stichprobengroesse zu",
+                "Der Stichprobenmittelwert konvergiert mit wachsendem n gegen den Erwartungswert"
+            ],
+            "correct": 3,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was bedeutet es, wenn ein Schaetzer erwartungstreu ist?",
+            "answers": [
+                "Der Schaetzer hat keine Varianz",
+                "Der Schaetzer ist immer korrekt",
+                "Der Schaetzer benoetigt viele Daten",
+                "Der Erwartungswert des Schaetzers entspricht dem wahren Parameter"
+            ],
+            "correct": 3,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist die Verzerrung eines Schaetzers?",
+            "answers": [
+                "Die Unsicherheit der Messung",
+                "Die Standardabweichung des Schaetzers",
+                "Der Fehler bei der Berechnung",
+                "Die Differenz zwischen Erwartungswert des Schaetzers und wahrem Parameter"
+            ],
+            "correct": 3,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Welche Masszahlen geben die Qualitaet eines Schaetzers an?",
+            "answers": [
+                "Nur der Mittelwert",
+                "Minimum und Maximum",
+                "Median und Modus",
+                "Erwartungstreue (Bias), Varianz, Mean Squared Error (MSE)"
+            ],
+            "correct": 3,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was ist die Idee bei der Maximum-Likelihood-Methode zur Parameterschaetzung?",
+            "answers": [
+                "Waehle die Parameter, die die beobachteten Daten am wahrscheinlichsten machen",
+                "Berechne den Durchschnitt aller Parameter",
+                "Finde den groessten Wert in den Daten",
+                "Maximiere die Anzahl der Datenpunkte"
+            ],
+            "correct": 0,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Wie funktioniert die Kleinste-Quadrate-Schaetzung?",
+            "answers": [
+                "Minimiere die Summe der quadrierten Abweichungen zwischen Daten und Modell",
+                "Finde die kleinste Beobachtung",
+                "Berechne die Wurzel der Varianz",
+                "Addiere alle Quadrate"
             ],
             "correct": 0,
             "difficulty": "hard"
         }
     ],
-    "Differenzialgleichungen": [
+    "Diskrete Zufallsvariablen": [
         {
-            "text": "Was ist eine DGL 1. Ordnung?",
+            "text": "Was kann man mit der Binomialverteilung modellieren?",
             "answers": [
-                "Enthält nur \\( f(x) \\)",
-                "Enthält nur die 1. Ableitung",
-                "Enthält Terme mit \\( x^2 \\)",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Die Lösung der DGL \\( y' = ky \\) ist ein...",
-            "answers": [
-                "Lineares Wachstum",
-                "Exponentielles Wachstum",
-                "Logarithmisches Wachstum",
-                "Noch einfügen."
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was beschreibt der Begriff 'Fixpunkt'?",
-            "answers": [
-                "Einen Zustand ohne Änderung (Gleichgewicht)",
-                "Den Startwert",
-                "Den höchsten Punkt",
-                "Noch einfügen."
-            ],
-            "correct": 0,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was ist das Ziel des Euler-Verfahrens?",
-            "answers": [
-                "Exakte Lösung finden",
-                "Ableitung bestimmen",
-                "Numerische Annäherung",
-                "Noch einfügen."
-            ],
-            "correct": 2,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was beschreibt das 'Vektorfeld' einer Differenzialgleichung \\( \\dot{x} = f(x) \\)?",
-            "answers": [
-                "Die statischen Grenzen des Modells",
-                "Die Richtung und Geschwindigkeit der Systemänderung für jeden Zustand",
-                "Die Anzahl der beteiligten Spezies",
-                "Den Namen des Forschers"
-            ],
-            "correct": 1,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Was kennzeichnet einen 'Fixpunkt' (Gleichgewichtszustand) in einem dynamischen System?",
-            "answers": [
-                "Die Ableitung an dieser Stelle ist Null (keine Änderung mehr)",
-                "Das System explodiert an dieser Stelle",
-                "Der Zustand ist dort immer maximal",
-                "Es ist der Startwert der Simulation"
-            ],
-            "correct": 0,
-            "difficulty": "easy"
-        },
-        {
-            "text": "Wann bezeichnet man einen Fixpunkt als 'asymptotisch stabil'?",
-            "answers": [
-                "Wenn das System nach einer kleinen Störung wieder zu diesem Punkt zurückkehrt",
-                "Wenn das System sich immer weiter von diesem Punkt entfernt",
-                "Wenn der Punkt auf der x-Achse liegt",
-                "Wenn der Fixpunkt den Wert Null hat"
+                "Die Anzahl der Erfolge bei n unabhaengigen Bernoulli-Experimenten",
+                "Nur normalverteilte Daten",
+                "Beliebige stetige Prozesse",
+                "Zeitreihen mit Trend"
             ],
             "correct": 0,
             "difficulty": "hard"
         },
         {
-            "text": "Was ist die Kernidee des logistischen Wachstumsmodells im Vergleich zum exponentiellen Wachstum?",
+            "text": "Was ist das Besondere an der Poisson-Verteilung?",
             "answers": [
-                "Es gibt keine Vermehrung",
-                "Es berücksichtigt eine Kapazitätsgrenze des Lebensraums",
-                "Es wächst unendlich weiter",
-                "Es ist nur für Bakterien anwendbar"
+                "Sie ist immer symmetrisch",
+                "Sie modelliert seltene Ereignisse und ist ein Grenzfall der Binomialverteilung",
+                "Sie ist nur fuer grosse Stichproben geeignet",
+                "Sie hat keine Parameter"
             ],
             "correct": 1,
             "difficulty": "hard"
         },
         {
-            "text": "Was beschreiben 'Fixpunkte' in einem biologischen Systemmodell?",
+            "text": "Was sind Kovarianz und Korrelationskoeffizient?",
             "answers": [
-                "Den Zeitpunkt des maximalen Wachstums",
-                "Die Startwerte der Population",
-                "Zustände, an denen die lokale Änderungsrate verschwindet (Gleichgewichte)",
-                "Die maximale Kapazität, die nie erreicht wird"
+                "Beides sind Lageparameter",
+                "Kovarianz misst linearen Zusammenhang, Korrelation ist die standardisierte Kovarianz",
+                "Nur fuer kategoriale Daten geeignet",
+                "Masse fuer die Variabilitaet einzelner Variablen"
             ],
-            "correct": 2,
+            "correct": 1,
+            "difficulty": "hard"
+        }
+    ],
+    "Stetige Zufallsvariablen": [
+        {
+            "text": "Was kann man mit der Binomialverteilung modellieren?",
+            "answers": [
+                "Die Anzahl der Erfolge bei n unabhaengigen Bernoulli-Experimenten",
+                "Nur normalverteilte Daten",
+                "Beliebige stetige Prozesse",
+                "Zeitreihen mit Trend"
+            ],
+            "correct": 0,
             "difficulty": "hard"
         },
         {
-            "text": "Mathematisch gesehen sind Fixpunkte eines Systems \\( \\dot{x} = f(x) \\)...",
+            "text": "Was ist das Besondere an der Poisson-Verteilung?",
             "answers": [
-                "Die Maxima von \\( f(x) \\)",
-                "Die Polstellen der Funktion \\( f(x) \\)",
-                "Die Wendepunkte",
-                "Die Nullstellen der Funktion \\( f(x) \\)"
+                "Sie ist immer symmetrisch",
+                "Sie modelliert seltene Ereignisse und ist ein Grenzfall der Binomialverteilung",
+                "Sie ist nur fuer grosse Stichproben geeignet",
+                "Sie hat keine Parameter"
+            ],
+            "correct": 1,
+            "difficulty": "hard"
+        }
+    ],
+    "Statistisches Testen": [
+        {
+            "text": "Was besagt der zentrale Grenzwertsatz und warum ist das so wichtig?",
+            "answers": [
+                "Nur fuer identische Verteilungen anwendbar",
+                "Die Summe/Mittelwert vieler unabhaengiger ZV ist approximativ normalverteilt; Basis fuer viele Tests",
+                "Alle Daten sind normalverteilt",
+                "Der Mittelwert ist immer 0"
+            ],
+            "correct": 1,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was bezeichnet der \\(\\alpha\\)-Fehler, bzw. der Fehler 1. Art?",
+            "answers": [
+                "Die Nullhypothese wird verworfen, obwohl sie in Wirklichkeit wahr ist.",
+                "Die Nullhypothese wird beibehalten, obwohl sie in Wirklichkeit falsch ist.",
+                "Ein Rechenfehler bei der Bestimmung des Stichprobenumfangs.",
+                "Das fehlerhafte Ablehnen der Alternativhypothese, wenn diese falsch ist."
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was bezeichnet der \\(\\beta\\)-Fehler, bzw. der Fehler 2. Art?",
+            "answers": [
+                "Die Nullhypothese wird verworfen, obwohl sie wahr ist.",
+                "Die Nullhypothese wird beibehalten, obwohl die Alternativhypothese wahr ist.",
+                "Die Berechnung einer negativen Varianz im ANOVA-Modell.",
+                "Die irrtümliche Annahme einer Normalverteilung bei schiefen Daten."
+            ],
+            "correct": 1,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Welche Arten von Fehlern gibt es bei Hypothesentests?",
+            "answers": [
+                "Kleine und grosse Fehler",
+                "Fehler 1. Art (H0 faelschlich ablehnen) und Fehler 2. Art (H0 faelschlich beibehalten)",
+                "Messfehler und Rechenfehler",
+                "Nur systematische Fehler"
+            ],
+            "correct": 1,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist das Signifikanzniveau \\(\\alpha\\)?",
+            "answers": [
+                "Die maximale Wahrscheinlichkeit fuer einen Fehler 1. Art",
+                "Der kritische Wert der Teststatistik",
+                "Die Wahrscheinlichkeit, dass H0 wahr ist",
+                "Die Groesse der Stichprobe"
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Worin unterscheiden sich der einseitige und zweiseitige Gauss-Test?",
+            "answers": [
+                "Einseitig: H1: \\(\\mu > \\mu_0\\) oder \\(\\mu < \\mu_0\\); Zweiseitig: H1: \\(\\mu\\neq\\mu_0\\)",
+                "Die Anzahl der Stichproben",
+                "Die verwendete Verteilung",
+                "Die Berechnung des Mittelwerts"
+            ],
+            "correct": 0,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist Nullhypothese und was Alternativhypothese?",
+            "answers": [
+                "H0 ist immer falsch, H1 immer wahr",
+                "Beide sind das Gleiche",
+                "H0 kommt von den Daten, H1 von der Theorie",
+                "H0: zu testende Behauptung (oft Status quo); H1: das Gegenteil"
+            ],
+            "correct": 3,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Was ist die Ueberschreitungswahrscheinlichkeit (p-Wert)?",
+            "answers": [
+                "Immer gleich \\(\\alpha\\)",
+                "Die Fehlerwahrscheinlichkeit der Messung",
+                "Die Wahrscheinlichkeit, dass H1 wahr ist",
+                "Die Wahrscheinlichkeit, unter H0 ein mindestens so extremes Ergebnis zu beobachten"
             ],
             "correct": 3,
             "difficulty": "hard"
+        },
+        {
+            "text": "Was ist die Standardnormalverteilung und warum ist sie so bedeutend?",
+            "answers": [
+                "Eine Verteilung nur fuer grosse Stichproben",
+                "Normalverteilung mit Erwartungswert 0 und Varianz 1; dient als Referenz fuer Standardisierung",
+                "Die haeufigste Verteilung in der Natur",
+                "Eine gleichmaessige Verteilung aller Werte"
+            ],
+            "correct": 1,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was ist der Unterschied zwischen Gauss- und t-Test?",
+            "answers": [
+                "t-Test ist fuer kleine Stichproben, Gauss-Test fuer grosse",
+                "Sie sind identisch",
+                "Gauss-Test ist genauer",
+                "Gauss-Test bei bekannter Varianz, t-Test bei geschaetzter Varianz aus der Stichprobe"
+            ],
+            "correct": 3,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Welche Voraussetzung muessen die Daten fuer einen t-Test erfuellen?",
+            "answers": [
+                "Keine Ausreisser",
+                "Mindestens 1000 Beobachtungen",
+                "Normalverteilung der Grundgesamtheit (bei kleinen Stichproben kritisch)",
+                "Gleichverteilung"
+            ],
+            "correct": 2,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Welcher Wert wird beim Zweistichprobentest betrachtet?",
+            "answers": [
+                "Die Differenz der Mittelwerte der beiden Stichproben",
+                "Der groessere Mittelwert",
+                "Die Summe der Mittelwerte",
+                "Das Produkt der Varianzen"
+            ],
+            "correct": 0,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Welche Varianten des Zweistichprobentests gibt es und was unterscheidet sie?",
+            "answers": [
+                "Kleine und grosse Stichproben",
+                "Verbundene Stichproben (gepaart) und unverbundene Stichproben (unabhaengig)",
+                "Parametrisch und nicht-parametrisch",
+                "Nur einseitige und zweiseitige Tests"
+            ],
+            "correct": 1,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Die Methode der kleinsten Quadrate liefert eine eindeutige Regressionsgerade - woher kommen also die Unsicherheiten?",
+            "answers": [
+                "Aus zu kleinen Stichproben",
+                "Es gibt keine Unsicherheiten",
+                "Aus der Streuung der Daten um die Regressionsgerade (Residuen)",
+                "Aus Rechenfehlern"
+            ],
+            "correct": 2,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Warum ist der Test H0: \\(\\beta = 0\\) versus H1: \\(\\beta\\neq0\\) besonders interessant?",
+            "answers": [
+                "Er wird immer signifikant",
+                "Er benoetigt keine Voraussetzungen",
+                "Er ist am einfachsten zu berechnen",
+                "Er prueft, ob ueberhaupt ein linearer Zusammenhang besteht"
+            ],
+            "correct": 3,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Welche Prognosen sind basierend auf einer linearen Regression moeglich?",
+            "answers": [
+                "Nur der Mittelwert",
+                "Nur fuer vergangene Werte",
+                "Exakte zukuenftige Werte",
+                "Punktschaetzung und Prognoseintervalle fuer zukuenftige Werte"
+            ],
+            "correct": 3,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Was muss man bei einer ANOVA überprüfen: \\(x_{ij} = \\mu + \\alpha_i + \\varepsilon_{ij}\\)",
+            "answers": [
+                "\\(\\mu \\sim \\mathcal{N}(0, \\sigma^2)\\)",
+                "\\(\\alpha_i \\sim \\mathcal{N}(0, \\sigma^2)\\)",
+                "\\(\\varepsilon_{ij} \\sim \\mathcal{N}(0, \\sigma^2)\\)",
+                "\\(x_{ij} \\sim \\mathcal{N}(\\mu, 0)\\)"
+            ],
+            "correct": 2,
+            "difficulty": "easy"
+        },
+        {
+            "text": "Worauf muss man bei einem Test auf Normalität achten?",
+            "answers": [
+                "Stichprobengröße (bei sehr großen oder kleinen Stichproben können Tests über- bzw. unterempfindlich sein).",
+                "Nichts, Tests auf Normalität können immer zuverlässig durchgeführt werden.",
+                "Dass das Merkmal ausschließlich diskrete Werte annimmt.",
+                "Dass der Mittelwert vorab genau null sein muss."
+            ],
+            "correct": 0,
+            "difficulty": "hard"
+        },
+        {
+            "text": "Wie kann man visuell auf Normalverteilung prüfen?",
+            "answers": [
+                "Mit einem Quantil-Quantil (QQ) Plot.",
+                "Mit einem Punktdiagramm der Mittelwerte.",
+                "Mithilfe einer Vierfeldertafel.",
+                "Durch Betrachten der Einheitsmatrix."
+            ],
+            "correct": 0,
+            "difficulty": "easy"
         }
     ]
 }
