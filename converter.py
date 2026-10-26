@@ -129,5 +129,12 @@ def json_to_excel(name: str, name_out: str) -> None:
 
     return None
 
-excel_to_json(name = "test.xlsx", name_out = "questions.json")
-# json_to_excel(name = "questions.json", name_out = "test.xlsx")
+if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Konvertiert eine hochgeladene Excel-Datei in questions.json.")
+    parser.add_argument("input_xlsx", help="Pfad zur Excel-Datei, die konvertiert werden soll.")
+
+    args = parser.parse_args()
+
+    excel_to_json(name=args.input_xlsx, name_out="questions.json")
